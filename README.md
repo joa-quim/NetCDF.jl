@@ -8,10 +8,22 @@ NetCDF.jl
 
 NetCDF support for the julia programming language, there is a high-level and a medium-level interface for writing and reading netcdf files.
 
+# WARNING
+
+This version relies on having [GMT](https://github.com/GenericMappingTools/GMT.jl) installed and will use it to find the system libraries
+needed for this package. This has the advantage of potentially saving ~800 Mb of disk space (registered package may install Conda). However,
+being a fork it may risk to go out of sync with time.
+
+See also same solution for:
+
+- [GDAL](https://github.com/joa-quim/GDAL.jl)
+- [LibGEOS](https://github.com/joa-quim/LibGEOS.jl)
+- [Proj4](https://github.com/joa-quim/Proj4.jl)
+
 # Installation
 
 ```julia
-pkg> add NetCDF
+pkg> add https://github.com/joa-quim/NetCDF.jl
 ```
 
 # Quickstart
